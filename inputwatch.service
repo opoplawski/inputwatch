@@ -1,0 +1,10 @@
+[Unit]
+Description=Input monitor
+After=local-fs.target
+
+[Service]
+Type=simple
+ExecStart=/usr/sbin/inputwatch
+
+[Install]
+WantedBy=multi-user.target
